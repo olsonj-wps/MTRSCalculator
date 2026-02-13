@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef } from "react";
+  const { useState, useEffect, useRef } = React;
 
 const TIER1_AGES = Array.from({ length: 20 }, (_, i) => 46 + i);
 const TIER2_AGES = Array.from({ length: 8 }, (_, i) => 60 + i);
@@ -267,7 +267,7 @@ const tdStyle = {
   fontWeight: 200,
 };
 
-export default function App() {
+  function App() {
   const [tier, setTier] = useState(1);
   const [age, setAge] = useState(62);
   const [yos, setYos] = useState(30);
